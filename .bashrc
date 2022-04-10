@@ -1,6 +1,14 @@
+install() {
+    sudo apt install $@ -y
+}
+
+autoremove() {
+    sudo apt autoremove -y
+}
+
 update() {
-    sudo apt update -y
-    sudo apt upgrade -y
+    sudo apt update -y --allow-downgrades
+    sudo apt upgrade -y --allow-downgrades
 }
 
 vpn() {
