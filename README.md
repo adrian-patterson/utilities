@@ -1,2 +1,2 @@
 # linux-utilities
-* Quick access to unix setup files useful for configuring any unix-based OS
+* All sorts of utilities/files for quick setup and configuration

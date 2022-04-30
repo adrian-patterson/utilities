@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+
+  led-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - <Port in docker>:<External port>

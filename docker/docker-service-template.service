@@ -1,0 +1,18 @@
+# Place in /etc/systemd/system/docker-service-template.service
+
+[Unit]
+Description=Describe
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=<Directory for docker-compose>
+ExecStart=<Path to shell script which runs docker-compose up>
+ExecStop=<Path to shell script which runs docker-compose down>
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
