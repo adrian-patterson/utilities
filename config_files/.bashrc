@@ -7,7 +7,7 @@ autoremove() {
 }
 
 update() {
-    sudo apt update -y --allow-downgrades
+    sudo apt update
     sudo apt upgrade -y --allow-downgrades
 }
 
