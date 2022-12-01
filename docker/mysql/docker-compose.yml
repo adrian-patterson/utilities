@@ -1,5 +1,4 @@
 services:
-
         mysql-server:
                 image: mysql:latest
                 command: --default-authentication-plugin=mysql_native_password
